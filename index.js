@@ -57,7 +57,8 @@ app.post('/webhook-leads', (req, res) => {
 
 app.get('/',(req,res)=>{
 
-  res.status(200)
+  res.status(200).json({ status: "ok", message: "Processamento iniciado em background" });
+  return;
 })
 const PORT = 3000;
 app.listen(PORT, () => {
