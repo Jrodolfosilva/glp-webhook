@@ -55,6 +55,10 @@ app.post('/webhook-leads', (req, res) => {
   enviarMensagemComVideo(payload).catch(err => console.error("Erro na fila de envio:", err));
 });
 
+app.get('/',(req,res)=>{
+
+  res.status(200)
+})
 const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Servidor rodando na porta ${PORT}`);
