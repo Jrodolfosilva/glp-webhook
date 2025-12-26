@@ -10,7 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
-const VITE_WHATSAPP_URL = 'http://31.97.160.145:3333/message/video?key=e8e3b0d2-9f05-46cd-acbf-931cf57c154c';
+const VITE_WHATSAPP_URL = 'http://31.97.160.145:3333/message/video?key=777';
 const VIDEO_PATH = path.join(__dirname, 'video.mp4');
 
 async function enviarMensagemComVideo(dados) {
