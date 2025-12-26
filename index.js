@@ -6,7 +6,15 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-app.use(cors());
+app.use(cors({ 
+  origin: [
+    'https://glp1effects.com.br', 
+    'https://www.glp1effects.com.br',
+    'http://localhost:8080', /* Remover depois */
+  ],
+  methods: ['POST', 'GET', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.use(express.json());
 
