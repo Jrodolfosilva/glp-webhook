@@ -10,6 +10,7 @@ app.use(cors({
   origin: [
     'https://glp1effects.com.br', 
     'https://www.glp1effects.com.br',
+    'https://www.glp1effects.com.br/comunidade',
     'http://localhost:8080', /* Remover depois */
   ],
   methods: ['POST', 'GET', 'OPTIONS'],
