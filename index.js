@@ -11,7 +11,8 @@ app.use(cors({
     'https://glp1effects.com.br', 
     'https://www.glp1effects.com.br',
     'https://www.glp1effects.com.br/comunidade',
-    'http://localhost:8080', /* Remover depois */
+    'https://comunidade.glp1effects.com.br/',
+    /^https:\/\/([a-z0-9-]+\.)?glp1effects\.com\.br$//* Remover depois */
   ],
   methods: ['POST', 'GET', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
